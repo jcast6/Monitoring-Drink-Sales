@@ -12,7 +12,7 @@ pandas
 matplotlib
 tkinter
 
-##Usage
+## Usage
 Run the script using a Python interpreter. The GUI will appear.
 Enter the number of days for analysis.
 Input sales data manually for each product or import a CSV file containing sales data.
@@ -29,5 +29,5 @@ Rockstar Recover Lemonade
 Rockstar Pure Zero Fruit Punch
 Each row in the CSV file should represent daily sales data for the specified products.
 
-Notes
+## Notes
 Ensure that the sales data entered is a non-negative integer.
