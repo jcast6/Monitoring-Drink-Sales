@@ -13,7 +13,7 @@ root = tk.Tk()
 root.withdraw()  # Hide the root window
 
 # Display welcome message
-messagebox.showinfo("Welcome", "Welcome to RockstarDrink Analytics! Please select the file with sales data needed to be analyzed.")
+messagebox.showinfo("Welcome", "Welcome to Drink Analytics! Please select the file with sales data needed to be analyzed.")
 
 # Prompt user to select CSV file
 file_path = filedialog.askopenfilename(filetypes=[('CSV files', '*.csv')])
