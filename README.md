@@ -1,5 +1,5 @@
-# RockstarDrink Analytics
-RockstarDrink Analytics is a Python application that analyzes sales data of various drinks and generates visualizations based on the data. The application supports processing sales data of multiple stores (if provided) and displays weekly sales trends and total cases sold for each drink.
+# Drink Analytics
+Drink Analytics is a Python application that analyzes sales data of various drinks and generates visualizations based on the data. The application supports processing sales data of multiple stores (if provided) and displays weekly sales trends and total cases sold for each drink.
 
 When you run the script, a welcome message will display, then you can click ok to continue to choose your sales data file 
 
