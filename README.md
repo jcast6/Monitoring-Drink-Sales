@@ -1,4 +1,4 @@
-# Drink Analytics
+# Sales Analytics
 Drink Analytics is a Python application that analyzes sales data of various drinks and generates visualizations based on the data. The application supports processing sales data of multiple stores (if provided) and displays weekly sales trends and total cases sold for each drink.
 
 When you run the script, a welcome message will display, then you can click ok to continue to choose your sales data file 
@@ -9,12 +9,12 @@ The provided csv files can be saved into any location in your directory and you 
 
 Current Results:
 
+![image](https://github.com/jcast6/Monitoring-Drink-Sales/assets/89822103/464d74e0-d3c1-4ea2-bb58-7ee8dd7cb61e)
 
-![image](https://github.com/jcast6/Monitoring-Drink-Sales/assets/89822103/37f49217-c245-4890-9be5-7d7353d3eb63)
+![image](https://github.com/jcast6/Monitoring-Drink-Sales/assets/89822103/683cc088-32d6-4785-9e72-26bc2dc91652)
 
-![search_for_data_file](https://github.com/jcast6/Monitoring-Rockstar-Energy-Drink-Sales/assets/89822103/bdaefa46-eb40-4a00-b5c9-ce5e7bc457c8)
+![image](https://github.com/jcast6/Monitoring-Drink-Sales/assets/89822103/596f7cb1-5cc7-439c-97f8-cb2a9501a817)
 
+![image](https://github.com/jcast6/Monitoring-Drink-Sales/assets/89822103/06fffb44-23bf-4e0b-b433-61fa4a6d81ba)
 
-![display_plots](https://github.com/jcast6/Monitoring-Rockstar-Energy-Drink-Sales/assets/89822103/dba4b048-007d-459a-81d1-55af2e235442)
-
-
+![image](https://github.com/jcast6/Monitoring-Drink-Sales/assets/89822103/90ffff95-f518-47a9-b7fd-7b2609565960)
