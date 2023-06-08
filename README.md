@@ -9,7 +9,8 @@ The provided csv files can be saved into any location in your directory and you 
 
 Current Results:
 
-![opening_prompt](https://github.com/jcast6/Monitoring-Rockstar-Energy-Drink-Sales/assets/89822103/5802d244-6382-46ab-887f-156257adacf2)
+
+![image](https://github.com/jcast6/Monitoring-Drink-Sales/assets/89822103/37f49217-c245-4890-9be5-7d7353d3eb63)
 
 ![search_for_data_file](https://github.com/jcast6/Monitoring-Rockstar-Energy-Drink-Sales/assets/89822103/bdaefa46-eb40-4a00-b5c9-ce5e7bc457c8)
 
