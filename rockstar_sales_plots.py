@@ -27,12 +27,28 @@ if not file_path:
 sales_data = pd.read_csv(file_path)
 weeks = sales_data['Week'].nunique()
 
-def plot_data(data, store_name, ax1, ax2):
+def calculate_weekly_totals(data):
     # Calculate the weekly sales totals for all drinks combined
     weekly_totals = data[products].sum(axis=1)
+    return weekly_totals
 
+def calculate_product_totals(data):
     # Calculate the total cases sold for each drink
     product_totals = data[products].sum(axis=0)
+    return product_totals
+
+def calculate_growth_rate(data):
+    # Calculate the weekly sales totals for all drinks combined
+    weekly_totals = data[products].sum(axis=1)
+    
+    # Calculate the growth rate
+    growth_rate = weekly_totals.pct_change() * 100  # percent change from previous week
+    return growth_rate
+
+def plot_data(data, store_name, ax1, ax2):
+    # Use calculate_weekly_totals & calculate_product_totals functions
+    weekly_totals = calculate_weekly_totals(data)
+    product_totals = calculate_product_totals(data)
 
     # Round the limits of the y-axis to a multiple of 5
     y_max = round(weekly_totals.max() + 5, -1)
@@ -60,11 +76,8 @@ def plot_data(data, store_name, ax1, ax2):
     ax2.set_ylabel("Sales by case")
 
 def plot_growth(data, ax):
-    # Calculate the weekly sales totals for all drinks combined
-    weekly_totals = data[products].sum(axis=1)
-    
-    # Calculate the growth rate
-    growth_rate = weekly_totals.pct_change() * 100  # percent change from previous week
+    # Use calculate_growth_rate function
+    growth_rate = calculate_growth_rate(data)
 
     # Set the title
     ax.set_title("Sales growth rate")
@@ -167,4 +180,3 @@ else:
 
     plt.tight_layout()
     plt.show()
-
