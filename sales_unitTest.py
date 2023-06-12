@@ -23,7 +23,7 @@ class TestPlotFunctions(unittest.TestCase):
         data_store1 = self.data[self.data['Store'] == 'Store1']
         weekly_totals = data_store1[self.products].sum(axis=1)
         
-        # Call your function with data_store1 and check if the output matches expected results
+        # function with data_store1 and check if the output matches expected results
         result_weekly_totals = calculate_weekly_totals(data_store1)
         self.assertTrue((result_weekly_totals == weekly_totals).all())
 
@@ -31,7 +31,7 @@ class TestPlotFunctions(unittest.TestCase):
         data_store1 = self.data[self.data['Store'] == 'Store1']
         product_totals = data_store1[self.products].sum(axis=0)
         
-        # Call your function with data_store1 and check if the output matches expected results
+        # function with data_store1 and check if the output matches expected results
         result_product_totals = calculate_product_totals(data_store1)
         self.assertTrue((result_product_totals == product_totals).all())
 
@@ -42,7 +42,7 @@ class TestPlotFunctions(unittest.TestCase):
         # percent change from previous week
         growth_rate = weekly_totals.pct_change() * 100 
 
-        # Call your function with data_store1 and check if the output matches expected results
+        # function with data_store1 and check if the output matches expected results
         result_growth_rate = calculate_growth_rate(data_store1)
         self.assertTrue((result_growth_rate[1:] == growth_rate[1:]).all())
 
